@@ -2076,24 +2076,12 @@
   color: #acacac;
   max-width: 68%;
 }
+/* 객실 안내 문구는 입력한 그대로 보여 준다 — 줄마다 붙던 점(li:before)은 없앴다.
+   문구에 `-`·`[소제목]` 을 직접 쓰는 숙소가 많아 `· -` 로 기호가 겹쳤다. */
 .room_title .notice_li li {
   color: inherit;
   position: relative;
-  padding-left: 10px;
   word-break: keep-all;
-}
-.room_title .notice_li li:before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 2px;
-  height: 2px;
-  background: #acacac;
-  border-radius: 100%;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -1px;
 }
 .room_title .btn_wrap {
   float: right;
@@ -2219,10 +2207,6 @@
   }
   .room_title .notice_li li {
     padding: 0;
-  }
-  .room_title .notice_li li:before {
-    position: static;
-    margin-right: 5px;
   }
   .room_detail_img {
     padding-bottom: 50px;
